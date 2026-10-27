@@ -1,0 +1,481 @@
+Command line invocation:
+    /Applications/Xcode_26.6.app/Contents/Developer/usr/bin/xcodebuild -project WakeUp.xcodeproj -scheme WakeUp -configuration Release -sdk iphoneos -destination generic/platform=iOS -derivedDataPath build CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY= build
+
+Build settings from command line:
+    CODE_SIGN_IDENTITY = 
+    CODE_SIGNING_ALLOWED = NO
+    CODE_SIGNING_REQUIRED = NO
+    SDKROOT = iphoneos26.5
+
+2026-10-27 23:50:12.757 xcodebuild[1285:7192] [MT] IDERunDestination: Supported platforms for the buildables in the current scheme is empty.
+note: Using codesigning identity override: 
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (1 target)
+    Target 'WakeUp' in project 'WakeUp' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/runner/work/wakeup/wakeup/Resources/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: 4a300517920b84bc41de028361c8b4ce
+Build description path: /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/XCBuildData/4a300517920b84bc41de028361c8b4ce.xcbuilddata
+CreateBuildDirectory /Users/runner/work/wakeup/wakeup/build/Build/Products
+    cd /Users/runner/work/wakeup/wakeup/WakeUp.xcodeproj
+    builtin-create-build-directory /Users/runner/work/wakeup/wakeup/build/Build/Products
+
+CreateBuildDirectory /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex
+    cd /Users/runner/work/wakeup/wakeup/WakeUp.xcodeproj
+    builtin-create-build-directory /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex
+
+ClangStatCache /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk /Users/runner/work/wakeup/wakeup/build/SDKStatCaches.noindex/iphoneos26.5-23F81a-688ef53f1462e2c8f657fdc38a81448fee66e23052a0157c865c76b268046726.sdkstatcache
+    cd /Users/runner/work/wakeup/wakeup/WakeUp.xcodeproj
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -o /Users/runner/work/wakeup/wakeup/build/SDKStatCaches.noindex/iphoneos26.5-23F81a-688ef53f1462e2c8f657fdc38a81448fee66e23052a0157c865c76b268046726.sdkstatcache
+
+CreateBuildDirectory /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos
+    cd /Users/runner/work/wakeup/wakeup/WakeUp.xcodeproj
+    builtin-create-build-directory /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos
+
+WriteAuxiliaryFile /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp-c3ef9cc6a53fe08672257bd216fb0385-VFS-iphoneos/all-product-headers.yaml
+    cd /Users/runner/work/wakeup/wakeup/WakeUp.xcodeproj
+    write-file /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp-c3ef9cc6a53fe08672257bd216fb0385-VFS-iphoneos/all-product-headers.yaml
+
+CreateBuildDirectory /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+    cd /Users/runner/work/wakeup/wakeup/WakeUp.xcodeproj
+    builtin-create-build-directory /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+CreateBuildDirectory /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/ExplicitPrecompiledModules
+    cd /Users/runner/work/wakeup/wakeup/WakeUp.xcodeproj
+    builtin-create-build-directory /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+CreateBuildDirectory /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/EagerLinkingTBDs/Release-iphoneos
+    cd /Users/runner/work/wakeup/wakeup/WakeUp.xcodeproj
+    builtin-create-build-directory /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/EagerLinkingTBDs/Release-iphoneos
+
+WriteAuxiliaryFile /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/WakeUp.hmap (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    write-file /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/WakeUp.hmap
+
+WriteAuxiliaryFile /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/WakeUp.DependencyStaticMetadataFileList (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    write-file /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/WakeUp.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/WakeUp.DependencyMetadataFileList (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    write-file /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/WakeUp.DependencyMetadataFileList
+
+WriteAuxiliaryFile /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/WakeUp-project-headers.hmap (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    write-file /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/WakeUp-project-headers.hmap
+
+WriteAuxiliaryFile /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/WakeUp-own-target-headers.hmap (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    write-file /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/WakeUp-own-target-headers.hmap
+
+WriteAuxiliaryFile /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/WakeUp-generated-files.hmap (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    write-file /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/WakeUp-generated-files.hmap
+
+WriteAuxiliaryFile /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/WakeUp-all-target-headers.hmap (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    write-file /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/WakeUp-all-target-headers.hmap
+
+WriteAuxiliaryFile /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/WakeUp-all-non-framework-target-headers.hmap (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    write-file /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/WakeUp-all-non-framework-target-headers.hmap
+
+WriteAuxiliaryFile /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp_const_extract_protocols.json (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    write-file /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp_const_extract_protocols.json
+
+WriteAuxiliaryFile /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp.SwiftFileList (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    write-file /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp.SwiftFileList
+
+WriteAuxiliaryFile /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp.SwiftConstValuesFileList (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    write-file /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp.LinkFileList (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    write-file /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp.LinkFileList
+
+WriteAuxiliaryFile /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp-OutputFileMap.json (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    write-file /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp-OutputFileMap.json
+
+MkDir /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    /bin/mkdir -p /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app
+
+MkDir /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/assetcatalog_output/unthinned (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    /bin/mkdir -p /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/assetcatalog_output/unthinned
+
+MkDir /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/assetcatalog_output/thinned (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    /bin/mkdir -p /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/assetcatalog_output/thinned
+
+GenerateAssetSymbols /Users/runner/work/wakeup/wakeup/Resources/Assets.xcassets (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    /Applications/Xcode_26.6.app/Contents/Developer/usr/bin/actool /Users/runner/work/wakeup/wakeup/Resources/Assets.xcassets --compile /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app --output-format human-readable-text --notices --warnings --export-dependency-info /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/assetcatalog_dependencies --output-partial-info-plist /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/assetcatalog_generated_info.plist --app-icon AppIcon --compress-pngs --enable-on-demand-resources YES --development-region en --target-device iphone --minimum-deployment-target 26.0 --platform iphoneos --bundle-identifier com.huzz.wakeup --generate-swift-asset-symbol-extensions NO --generate-swift-asset-symbols /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/DerivedSources/GeneratedAssetSymbols.swift --generate-objc-asset-symbols /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/DerivedSources/GeneratedAssetSymbols.h --generate-asset-symbol-index /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+/* com.apple.actool.compilation-results */
+/Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+/Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/DerivedSources/GeneratedAssetSymbols.h
+/Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/DerivedSources/GeneratedAssetSymbols.swift
+
+
+CpResource /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/check_triple.caf /Users/runner/work/wakeup/wakeup/Sounds/check_triple.caf (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/runner/work/wakeup/wakeup/Sounds/check_triple.caf /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app
+
+CpResource /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/check_dingdong.caf /Users/runner/work/wakeup/wakeup/Sounds/check_dingdong.caf (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/runner/work/wakeup/wakeup/Sounds/check_dingdong.caf /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app
+
+CpResource /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/check_bingbing.caf /Users/runner/work/wakeup/wakeup/Sounds/check_bingbing.caf (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/runner/work/wakeup/wakeup/Sounds/check_bingbing.caf /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app
+
+CpResource /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/alarm_wobble.caf /Users/runner/work/wakeup/wakeup/Sounds/alarm_wobble.caf (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/runner/work/wakeup/wakeup/Sounds/alarm_wobble.caf /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app
+
+CpResource /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/alarm_truck_reverse.caf /Users/runner/work/wakeup/wakeup/Sounds/alarm_truck_reverse.caf (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/runner/work/wakeup/wakeup/Sounds/alarm_truck_reverse.caf /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app
+
+CpResource /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/alarm_smoke.caf /Users/runner/work/wakeup/wakeup/Sounds/alarm_smoke.caf (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/runner/work/wakeup/wakeup/Sounds/alarm_smoke.caf /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app
+
+CpResource /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/alarm_siren_yelp.caf /Users/runner/work/wakeup/wakeup/Sounds/alarm_siren_yelp.caf (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/runner/work/wakeup/wakeup/Sounds/alarm_siren_yelp.caf /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app
+
+CpResource /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/alarm_siren_wail.caf /Users/runner/work/wakeup/wakeup/Sounds/alarm_siren_wail.caf (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/runner/work/wakeup/wakeup/Sounds/alarm_siren_wail.caf /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app
+
+CpResource /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/alarm_rising_steps.caf /Users/runner/work/wakeup/wakeup/Sounds/alarm_rising_steps.caf (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/runner/work/wakeup/wakeup/Sounds/alarm_rising_steps.caf /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app
+
+CpResource /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/alarm_random_melody.caf /Users/runner/work/wakeup/wakeup/Sounds/alarm_random_melody.caf (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/runner/work/wakeup/wakeup/Sounds/alarm_random_melody.caf /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app
+
+CpResource /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/alarm_phone_trill.caf /Users/runner/work/wakeup/wakeup/Sounds/alarm_phone_trill.caf (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/runner/work/wakeup/wakeup/Sounds/alarm_phone_trill.caf /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app
+
+CpResource /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/alarm_morse_panic.caf /Users/runner/work/wakeup/wakeup/Sounds/alarm_morse_panic.caf (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/runner/work/wakeup/wakeup/Sounds/alarm_morse_panic.caf /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app
+
+CpResource /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/alarm_klaxon.caf /Users/runner/work/wakeup/wakeup/Sounds/alarm_klaxon.caf (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/runner/work/wakeup/wakeup/Sounds/alarm_klaxon.caf /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app
+
+CpResource /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/alarm_glitch.caf /Users/runner/work/wakeup/wakeup/Sounds/alarm_glitch.caf (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/runner/work/wakeup/wakeup/Sounds/alarm_glitch.caf /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app
+
+CpResource /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/alarm_dive_bomb.caf /Users/runner/work/wakeup/wakeup/Sounds/alarm_dive_bomb.caf (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/runner/work/wakeup/wakeup/Sounds/alarm_dive_bomb.caf /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app
+
+CpResource /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/alarm_digital_chirp.caf /Users/runner/work/wakeup/wakeup/Sounds/alarm_digital_chirp.caf (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/runner/work/wakeup/wakeup/Sounds/alarm_digital_chirp.caf /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app
+
+CpResource /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/alarm_classic_beep.caf /Users/runner/work/wakeup/wakeup/Sounds/alarm_classic_beep.caf (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/runner/work/wakeup/wakeup/Sounds/alarm_classic_beep.caf /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app
+
+CpResource /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/alarm_buzzer.caf /Users/runner/work/wakeup/wakeup/Sounds/alarm_buzzer.caf (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/runner/work/wakeup/wakeup/Sounds/alarm_buzzer.caf /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app
+
+CpResource /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/alarm_bell_ringer.caf /Users/runner/work/wakeup/wakeup/Sounds/alarm_bell_ringer.caf (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/runner/work/wakeup/wakeup/Sounds/alarm_bell_ringer.caf /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app
+
+CpResource /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/alarm_arp_scream.caf /Users/runner/work/wakeup/wakeup/Sounds/alarm_arp_scream.caf (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/runner/work/wakeup/wakeup/Sounds/alarm_arp_scream.caf /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app
+
+CompileAssetCatalogVariant thinned /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app /Users/runner/work/wakeup/wakeup/Resources/Assets.xcassets (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    /Applications/Xcode_26.6.app/Contents/Developer/usr/bin/actool /Users/runner/work/wakeup/wakeup/Resources/Assets.xcassets --compile /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/assetcatalog_output/thinned --output-format human-readable-text --notices --warnings --export-dependency-info /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/assetcatalog_dependencies_thinned --output-partial-info-plist /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/assetcatalog_generated_info.plist_thinned --app-icon AppIcon --compress-pngs --enable-on-demand-resources YES --development-region en --target-device iphone --minimum-deployment-target 26.0 --platform iphoneos
+/* com.apple.actool.compilation-results */
+/Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/assetcatalog_generated_info.plist_thinned
+/Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/assetcatalog_output/thinned/AppIcon60x60@2x.png
+/Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/assetcatalog_output/thinned/AppIcon76x76@2x~ipad.png
+/Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/assetcatalog_output/thinned/Assets.car
+
+
+SwiftDriver WakeUp normal arm64 com.apple.xcode.tools.swift.compiler (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    builtin-SwiftDriver -- /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name WakeUp -O -whole-module-optimization @/Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp.SwiftFileList -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -target arm64-apple-ios26.0 -g -module-cache-path /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -swift-version 5 -I /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos -F /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos -c -num-threads 3 -Xcc -ivfsstatcache -Xcc /Users/runner/work/wakeup/wakeup/build/SDKStatCaches.noindex/iphoneos26.5-23F81a-688ef53f1462e2c8f657fdc38a81448fee66e23052a0157c865c76b268046726.sdkstatcache -output-file-map /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex -sdk-module-cache-path /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp_const_extract_protocols.json -Xcc -iquote -Xcc /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/WakeUp-generated-files.hmap -Xcc -I/Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/WakeUp-own-target-headers.hmap -Xcc -I/Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/WakeUp-all-target-headers.hmap -Xcc -iquote -Xcc /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/WakeUp-project-headers.hmap -Xcc -I/Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/include -Xcc -I/Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/DerivedSources-normal/arm64 -Xcc -I/Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/DerivedSources/arm64 -Xcc -I/Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp-Swift.h -working-directory /Users/runner/work/wakeup/wakeup -no-emit-module-separately-wmo
+
+SwiftDriver\ Compilation WakeUp normal arm64 com.apple.xcode.tools.swift.compiler (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    builtin-Swift-Compilation -- /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name WakeUp -O -whole-module-optimization @/Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp.SwiftFileList -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -target arm64-apple-ios26.0 -g -module-cache-path /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -swift-version 5 -I /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos -F /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos -c -num-threads 3 -Xcc -ivfsstatcache -Xcc /Users/runner/work/wakeup/wakeup/build/SDKStatCaches.noindex/iphoneos26.5-23F81a-688ef53f1462e2c8f657fdc38a81448fee66e23052a0157c865c76b268046726.sdkstatcache -output-file-map /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex -sdk-module-cache-path /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp_const_extract_protocols.json -Xcc -iquote -Xcc /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/WakeUp-generated-files.hmap -Xcc -I/Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/WakeUp-own-target-headers.hmap -Xcc -I/Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/WakeUp-all-target-headers.hmap -Xcc -iquote -Xcc /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/WakeUp-project-headers.hmap -Xcc -I/Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/include -Xcc -I/Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/DerivedSources-normal/arm64 -Xcc -I/Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/DerivedSources/arm64 -Xcc -I/Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp-Swift.h -working-directory /Users/runner/work/wakeup/wakeup -no-emit-module-separately-wmo
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/_AvailabilityInternal-53WG57HK81MLXOKQEQKOF2FCO.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/ActivityKit-ISC3MEO4E6GQ7KBAHN5JNRT7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/_SwiftConcurrencyShims-2X5FXPLZMQ5FUR9X27CYQ2OTJ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/_Builtin_stdarg-9ZK6MF1SICSCQTG798WCMROCM.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/_Builtin_float-5RV7X4N84XACZLHKBFY1TR1EM.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/DeveloperToolsSupport-DW6MBY4ALI1W6JJYCD10033FS.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/_Builtin_stdbool-F2Q90SH8G5XQQGZ81TFLFT8IH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/_Builtin_stddef-90QQ7RGKI07Y3O97TN9HJHGI8.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/ptrcheck-1MK41HK6WPHJLH3CRH0J2R2UO.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/SwiftShims-2KF4C6254UBD892WBOI984C5O.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/ptrauth-5TVAD2XVMGZ7U6SLNOMQO3FSC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/_DarwinFoundation1-6750WMV1G4NR88926FIR631GP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/ExtensionFoundation-1P7926F2E5N9XRSDFENQ3L4L7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/_DarwinFoundation2-8TA3ON8TCZAOPH0SGPP6T9QML.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/_Builtin_limits-3FEXX6KNXO2DRDZSOVGZG8DCM.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/sys_types-4SGZV7ABXCZ5P6OVDKVABBBMM.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/_Builtin_tgmath-74LA61O9AAJ8B82XR6PV66205.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/_Builtin_stdint-EU6FOSWVYCZKTE9OO6D4OEYMR.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/_DarwinFoundation3-7Y68PO5M9XD557CNUG5NFYNKA.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/_Builtin_stdatomic-4GT98JVBNBPS6U5FE76CW45RN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/_Builtin_intrinsics-21XASCDMEEWE8N49BLDDY02E1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/_Builtin_inttypes-3SOSDLXIJH1SJD1CUY8Z0340B.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/Darwin-DZT56X37BI1GLQMM7KS7SS0WT.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/simd-ECUEYD0XN2K1C9K5MELUZRBC1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/MachO-DOZ80YPZKC5BKFU72SNWRF2VV.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/ObjectiveC-4RYDIOBE82W8JBVO143G500R3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/os_object-BEDH6AGISTDPVJLL4ZIO4LBBZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/Spatial-5XMO2ZHKWATS216T0D5QBT19W.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/os_workgroup-7KUTD4JKXDOQVJSK5PRAKHVO8.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/Dispatch-A3W2K1IJ3I7BJSYTGLB6GMVT7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/dnssd-AZJ8TE8SK8PIC0KHKVP5WEEE0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/XPC-9EX7EGKQWT3LD02FHL0QQCRDZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/CoreFoundation-14ALO5MNRP6GP5A0NQFQAGE9D.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/os-706X62D6MAKRQVHMXK79YJ7UY.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/CFNetwork-ES5ZET9CLF6XVF9JH3JXJAW0O.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/CoreAudioTypes-7IY70H9EQUZ2EQ5H726KXEFKR.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/CoreGraphics-DTW5GOX0FSGZVKUD8LXM73AZL.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/Security-CNKM1RWR9E9MDMIOA1175TFA4.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/CoreAudio-9XNM2RFXVER6IHKYFJA5ASI64.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/Foundation-7JMPE27SQS6M4MNKINB4YNB3C.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/ImageIO-W8JHM12PWTA66H2N3NIWIM20.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/CoreText-B6C7WIK2ROHQJE6FRQNSO2VJ1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/UniformTypeIdentifiers-5AKIPXE1V66YG57RGL0KOIOSQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/DataDetection-AGO4EEE2HMQ2P14QYO353XMO7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/UserNotifications-CMZOO9LYN4EPGG4SIENXWKWM6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/Accessibility-CBH3RCLLSVWKXK7M4ZURLUQO0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/FileProvider-E28XJ9EXDRKWAYQG97E9OAC8C.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/IOSurface-9V521TP0TAHVXK03R2HEFYQRE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/UIUtilities-9B2TH7PPDYILJFNRX2AL20M25.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/AppIntents-6PDSSVXAMVRPD3JMSQS5UBCXU.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/CoreData-85CVJWGU9HR67G7ZM4RU1NOA0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/OpenGLES-EAWEPOV6SU2LNWSLMMV247PAE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/CoreMIDI-EJT6CFUE0S1V75XJBI7602X4C.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/Metal-BK9JKOZXDRN9QCEWCPVC1UCL6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/RelevanceKit-CRFWNP5TB0MFCX63HB0AFTDZI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/AudioToolbox-CRB0A3Y0DS06N39JPVTMIHTYI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/Symbols-BM6XXT1FACDUO0RSS9I9PPX3A.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/CoreVideo-D1XK2BQ1PZ9SLL6AF3J3MHX3V.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/AlarmKit-BH2LKJ11VGWTXTGPUC8LOGGYG.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/_LocationEssentials-9I7CA932YBEU0IWYYFWQS3W08.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/CoreTransferable-BMPFWE3HP5PCHFX066TVOCI7C.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/CoreImage-E4KWSPIV9TEVKFOJX7XIR22PK.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/CoreMedia-4THFMACIH3VANC8JHJ007T00Q.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/CoreLocation-R3XFD5ZJKZKS77MJ33G633BJ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/QuartzCore-7YSB3T56G45PANM54GK6WSDIH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/MediaToolbox-C6T56W7AYWZ6WUY5JRCILWG3U.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/AVFAudio-GEZRRFEW1HOPPQMEQ9IUKJIS.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/UIKit-DNVUYDLRO39ZBQBDU4ZFGR1W0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/SwiftUICore-E7W4NRNSJZ6YQJM1ZXTPEVWG7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/CoreSpotlight-CAPA1K641APRIXX9XHW54YEKS.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/Network-2ZI723F4AJU1OQCKO802703L8.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/OSLog-153PZOJH2YYETQQQZCW8UUM98.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/AVRouting-AM3GAEFIXUNDX0XH8ZXL20C5D.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/AVFoundation-4U1C2MDZB0T15GU1FEUJ3DQ0J.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/SwiftUI-82F7Y1SEWA74IR4ZYV7H6VAXP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/MediaPlayer-B1009H46BWQBY9J87UQ91INA7.pcm
+
+SwiftCompile normal arm64 Compiling\ AlarmEngine.swift,\ BarcodeScanner.swift,\ CheckView.swift,\ HomeView.swift,\ Intents.swift,\ MissionView.swift,\ Models.swift,\ ProvisionInfo.swift,\ SoundLibrary.swift,\ SoundsView.swift,\ VolumeMaxer.swift,\ WakeUpApp.swift,\ GeneratedAssetSymbols.swift /Users/runner/work/wakeup/wakeup/Sources/AlarmEngine.swift /Users/runner/work/wakeup/wakeup/Sources/BarcodeScanner.swift /Users/runner/work/wakeup/wakeup/Sources/Views/CheckView.swift /Users/runner/work/wakeup/wakeup/Sources/Views/HomeView.swift /Users/runner/work/wakeup/wakeup/Sources/Intents.swift /Users/runner/work/wakeup/wakeup/Sources/Views/MissionView.swift /Users/runner/work/wakeup/wakeup/Sources/Models.swift /Users/runner/work/wakeup/wakeup/Sources/ProvisionInfo.swift /Users/runner/work/wakeup/wakeup/Sources/SoundLibrary.swift /Users/runner/work/wakeup/wakeup/Sources/Views/SoundsView.swift /Users/runner/work/wakeup/wakeup/Sources/VolumeMaxer.swift /Users/runner/work/wakeup/wakeup/Sources/WakeUpApp.swift /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/DerivedSources/GeneratedAssetSymbols.swift /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/XPC.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Accessibility.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/UIKit.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/CoreText.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/_AppIntents_UIKit.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/AlarmKit.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/SwiftUI.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/CoreData.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/DeveloperToolsSupport.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/RelevanceKit.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/CoreGraphics.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Distributed.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Dispatch.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/UniformTypeIdentifiers.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/ActivityKit.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/_DarwinFoundation2.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/AudioToolbox.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/simd.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/LightweightCodeRequirements.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/DataDetection.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/AVFoundation.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/ObjectiveC.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Network.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/CoreSpotlight.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/CoreAudio.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/_Builtin_float.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Swift.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/_AppIntents_SwiftUI.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/CoreMedia.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Spatial.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/_DarwinFoundation3.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/MediaPlayer.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/FileProvider.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/_DarwinFoundation1.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/CoreMIDI.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/OSLog.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/_Concurrency.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/SwiftUICore.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/ExtensionFoundation.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Foundation.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/CoreTransferable.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/os.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/_StringProcessing.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/CoreFoundation.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Metal.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/QuartzCore.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Combine.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/AVFAudio.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/AppIntents.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/CoreImage.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/System.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Synchronization.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Symbols.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Observation.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/CoreVideo.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/CoreLocation.swiftmodule/arm64e-apple-ios.swiftmodule /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/26.5/Darwin.swiftmodule/arm64e-apple-ios.swiftmodule /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/CoreImage-E4KWSPIV9TEVKFOJX7XIR22PK.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/UserNotifications-CMZOO9LYN4EPGG4SIENXWKWM6.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/CoreAudio-9XNM2RFXVER6IHKYFJA5ASI64.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/_Builtin_stdbool-F2Q90SH8G5XQQGZ81TFLFT8IH.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/DeveloperToolsSupport-DW6MBY4ALI1W6JJYCD10033FS.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/Darwin-DZT56X37BI1GLQMM7KS7SS0WT.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/ObjectiveC-4RYDIOBE82W8JBVO143G500R3.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/_Builtin_stdarg-9ZK6MF1SICSCQTG798WCMROCM.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/OpenGLES-EAWEPOV6SU2LNWSLMMV247PAE.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/QuartzCore-7YSB3T56G45PANM54GK6WSDIH.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/ptrcheck-1MK41HK6WPHJLH3CRH0J2R2UO.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/os-706X62D6MAKRQVHMXK79YJ7UY.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/UIUtilities-9B2TH7PPDYILJFNRX2AL20M25.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/AVFAudio-GEZRRFEW1HOPPQMEQ9IUKJIS.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/AlarmKit-BH2LKJ11VGWTXTGPUC8LOGGYG.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/IOSurface-9V521TP0TAHVXK03R2HEFYQRE.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/_Builtin_intrinsics-21XASCDMEEWE8N49BLDDY02E1.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/Spatial-5XMO2ZHKWATS216T0D5QBT19W.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/Metal-BK9JKOZXDRN9QCEWCPVC1UCL6.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/_Builtin_float-5RV7X4N84XACZLHKBFY1TR1EM.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/UIKit-DNVUYDLRO39ZBQBDU4ZFGR1W0.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/Foundation-7JMPE27SQS6M4MNKINB4YNB3C.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/MediaPlayer-B1009H46BWQBY9J87UQ91INA7.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/SwiftShims-2KF4C6254UBD892WBOI984C5O.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/DataDetection-AGO4EEE2HMQ2P14QYO353XMO7.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/UniformTypeIdentifiers-5AKIPXE1V66YG57RGL0KOIOSQ.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/_AvailabilityInternal-53WG57HK81MLXOKQEQKOF2FCO.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/ImageIO-W8JHM12PWTA66H2N3NIWIM20.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/_Builtin_inttypes-3SOSDLXIJH1SJD1CUY8Z0340B.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/AVRouting-AM3GAEFIXUNDX0XH8ZXL20C5D.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/simd-ECUEYD0XN2K1C9K5MELUZRBC1.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/CoreMedia-4THFMACIH3VANC8JHJ007T00Q.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/FileProvider-E28XJ9EXDRKWAYQG97E9OAC8C.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/AVFoundation-4U1C2MDZB0T15GU1FEUJ3DQ0J.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/SwiftUI-82F7Y1SEWA74IR4ZYV7H6VAXP.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/CoreText-B6C7WIK2ROHQJE6FRQNSO2VJ1.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/_DarwinFoundation2-8TA3ON8TCZAOPH0SGPP6T9QML.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/_Builtin_stdint-EU6FOSWVYCZKTE9OO6D4OEYMR.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/CoreSpotlight-CAPA1K641APRIXX9XHW54YEKS.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/Security-CNKM1RWR9E9MDMIOA1175TFA4.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/_Builtin_limits-3FEXX6KNXO2DRDZSOVGZG8DCM.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/CoreAudioTypes-7IY70H9EQUZ2EQ5H726KXEFKR.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/ActivityKit-ISC3MEO4E6GQ7KBAHN5JNRT7.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/RelevanceKit-CRFWNP5TB0MFCX63HB0AFTDZI.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/CoreVideo-D1XK2BQ1PZ9SLL6AF3J3MHX3V.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/sys_types-4SGZV7ABXCZ5P6OVDKVABBBMM.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/CoreData-85CVJWGU9HR67G7ZM4RU1NOA0.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/CoreTransferable-BMPFWE3HP5PCHFX066TVOCI7C.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/os_object-BEDH6AGISTDPVJLL4ZIO4LBBZ.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/_SwiftConcurrencyShims-2X5FXPLZMQ5FUR9X27CYQ2OTJ.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/_LocationEssentials-9I7CA932YBEU0IWYYFWQS3W08.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/AppIntents-6PDSSVXAMVRPD3JMSQS5UBCXU.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/os_workgroup-7KUTD4JKXDOQVJSK5PRAKHVO8.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/_DarwinFoundation1-6750WMV1G4NR88926FIR631GP.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/Network-2ZI723F4AJU1OQCKO802703L8.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/CFNetwork-ES5ZET9CLF6XVF9JH3JXJAW0O.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/Dispatch-A3W2K1IJ3I7BJSYTGLB6GMVT7.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/XPC-9EX7EGKQWT3LD02FHL0QQCRDZ.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/Accessibility-CBH3RCLLSVWKXK7M4ZURLUQO0.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/ExtensionFoundation-1P7926F2E5N9XRSDFENQ3L4L7.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/SwiftUICore-E7W4NRNSJZ6YQJM1ZXTPEVWG7.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/CoreLocation-R3XFD5ZJKZKS77MJ33G633BJ.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/MachO-DOZ80YPZKC5BKFU72SNWRF2VV.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/CoreGraphics-DTW5GOX0FSGZVKUD8LXM73AZL.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/_Builtin_tgmath-74LA61O9AAJ8B82XR6PV66205.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/CoreFoundation-14ALO5MNRP6GP5A0NQFQAGE9D.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/MediaToolbox-C6T56W7AYWZ6WUY5JRCILWG3U.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/ptrauth-5TVAD2XVMGZ7U6SLNOMQO3FSC.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/AudioToolbox-CRB0A3Y0DS06N39JPVTMIHTYI.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/_DarwinFoundation3-7Y68PO5M9XD557CNUG5NFYNKA.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/OSLog-153PZOJH2YYETQQQZCW8UUM98.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/_Builtin_stdatomic-4GT98JVBNBPS6U5FE76CW45RN.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/dnssd-AZJ8TE8SK8PIC0KHKVP5WEEE0.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/_Builtin_stddef-90QQ7RGKI07Y3O97TN9HJHGI8.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/CoreMIDI-EJT6CFUE0S1V75XJBI7602X4C.pcm /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/Symbols-BM6XXT1FACDUO0RSS9I9PPX3A.pcm /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp-dependencies-1.json (in target 'WakeUp' from project 'WakeUp')
+CompileSwift normal arm64 (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    
+
+LinkAssetCatalog /Users/runner/work/wakeup/wakeup/Resources/Assets.xcassets (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    builtin-linkAssetCatalog --thinned /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/assetcatalog_output/thinned --thinned-dependencies /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/assetcatalog_dependencies_thinned --thinned-info-plist-content /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/assetcatalog_generated_info.plist_thinned --unthinned /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/assetcatalog_output/unthinned --unthinned-dependencies /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/assetcatalog_dependencies_unthinned --unthinned-info-plist-content /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/assetcatalog_generated_info.plist_unthinned --output /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app --plist-output /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/assetcatalog_generated_info.plist
+note: Emplaced /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/Assets.car (in target 'WakeUp' from project 'WakeUp')
+note: Emplaced /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/AppIcon76x76@2x~ipad.png (in target 'WakeUp' from project 'WakeUp')
+note: Emplaced /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/AppIcon60x60@2x.png (in target 'WakeUp' from project 'WakeUp')
+
+ProcessInfoPlistFile /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/Info.plist /Users/runner/work/wakeup/wakeup/Generated/Info.plist (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    builtin-infoPlistUtility /Users/runner/work/wakeup/wakeup/Generated/Info.plist -producttype com.apple.product-type.application -genpkginfo /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -additionalcontentfile /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/assetcatalog_generated_info.plist -requiredArchitecture arm64 -o /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/Info.plist
+warning: 'UIRequiresFullScreen' has been deprecated starting in iOS 26.0 and will be ignored in a future release. See the UIRequiresFullScreen documentation for more details. (in target 'WakeUp' from project 'WakeUp')
+
+SwiftDriverJobDiscovery normal arm64 Compiling AlarmEngine.swift, BarcodeScanner.swift, CheckView.swift, HomeView.swift, Intents.swift, MissionView.swift, Models.swift, ProvisionInfo.swift, SoundLibrary.swift, SoundsView.swift, VolumeMaxer.swift, WakeUpApp.swift, GeneratedAssetSymbols.swift (in target 'WakeUp' from project 'WakeUp')
+
+SwiftDriver\ Compilation\ Requirements WakeUp normal arm64 com.apple.xcode.tools.swift.compiler (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name WakeUp -O -whole-module-optimization @/Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp.SwiftFileList -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -target arm64-apple-ios26.0 -g -module-cache-path /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -swift-version 5 -I /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos -F /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos -c -num-threads 3 -Xcc -ivfsstatcache -Xcc /Users/runner/work/wakeup/wakeup/build/SDKStatCaches.noindex/iphoneos26.5-23F81a-688ef53f1462e2c8f657fdc38a81448fee66e23052a0157c865c76b268046726.sdkstatcache -output-file-map /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex -sdk-module-cache-path /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/runner/work/wakeup/wakeup/build/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp_const_extract_protocols.json -Xcc -iquote -Xcc /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/WakeUp-generated-files.hmap -Xcc -I/Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/WakeUp-own-target-headers.hmap -Xcc -I/Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/WakeUp-all-target-headers.hmap -Xcc -iquote -Xcc /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/WakeUp-project-headers.hmap -Xcc -I/Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/include -Xcc -I/Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/DerivedSources-normal/arm64 -Xcc -I/Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/DerivedSources/arm64 -Xcc -I/Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp-Swift.h -working-directory /Users/runner/work/wakeup/wakeup -no-emit-module-separately-wmo
+
+SwiftMergeGeneratedHeaders /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/DerivedSources/WakeUp-Swift.h /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp-Swift.h (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    builtin-swiftHeaderTool -arch arm64 /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp-Swift.h -o /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/DerivedSources/WakeUp-Swift.h
+
+Copy /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.swiftmodule/arm64-apple-ios.swiftdoc /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp.swiftdoc (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp.swiftdoc /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.swiftmodule/arm64-apple-ios.swiftdoc
+
+Copy /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.swiftmodule/arm64-apple-ios.swiftmodule /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp.swiftmodule (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp.swiftmodule /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.swiftmodule/arm64-apple-ios.swiftmodule
+
+Copy /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.swiftmodule/arm64-apple-ios.abi.json /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp.abi.json (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp.abi.json /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.swiftmodule/arm64-apple-ios.abi.json
+
+Copy /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp.swiftsourceinfo (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp.swiftsourceinfo /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo
+
+Ld /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/WakeUp normal (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios26.0 -isysroot /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk -Os -L/Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/EagerLinkingTBDs/Release-iphoneos -L/Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos -F/Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/EagerLinkingTBDs/Release-iphoneos -F/Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos -filelist /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp.LinkFileList -Xlinker -rpath -Xlinker @executable_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp_lto.o -Xlinker -dependency_info -Xlinker /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp.swiftmodule @/Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp-linker-args.resp -o /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/WakeUp
+
+GenerateDSYMFile /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app.dSYM /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/WakeUp (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/WakeUp -o /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app.dSYM
+
+ExtractAppIntentsMetadata (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v17.6.109.0.ZCGv9o/Metal.xctoolchain --module-name WakeUp --sdk-root /Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.5.sdk --xcode-version 17F113 --platform-family iOS --deployment-target 26.0 --bundle-identifier com.huzz.wakeup --output /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app --target-triple arm64-apple-ios26.0 --binary-file /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/WakeUp --dependency-file /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp_dependency_info.dat --stringsdata-file /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp.SwiftFileList --metadata-file-list /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/WakeUp.DependencyMetadataFileList --static-metadata-file-list /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/WakeUp.DependencyStaticMetadataFileList --swift-const-vals-list /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/Objects-normal/arm64/WakeUp.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2026-10-27 23:50:48.901 appintentsmetadataprocessor[2090:9883] Starting appintentsmetadataprocessor export
+2026-10-27 23:50:48.957 appintentsmetadataprocessor[2090:9883] Writing Metadata.appintents
+2026-10-27 23:50:48.957 appintentsmetadataprocessor[2090:9883] Metadata root: /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/Metadata.appintents
+
+CopySwiftLibs /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/WakeUp --scan-folder /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/Frameworks --scan-folder /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/PlugIns --scan-folder /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/SystemExtensions --scan-folder /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/Extensions --platform iphoneos --toolchain /var/run/com.apple.security.cryptexd/mnt/com.apple.MobileAsset.MetalToolchain-v17.6.109.0.ZCGv9o/Metal.xctoolchain --toolchain /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+AppIntentsSSUTraining (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    /Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsnltrainingprocessor --infoplist-path /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/Info.plist --temp-dir-path /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/ssu --bundle-id com.huzz.wakeup --product-path /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app --extracted-metadata-path /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/Metadata.appintents --metadata-file-list /Users/runner/work/wakeup/wakeup/build/Build/Intermediates.noindex/WakeUp.build/Release-iphoneos/WakeUp.build/WakeUp.DependencyMetadataFileList --source-file /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app/Info.plist --archive-ssu-assets
+2026-10-27 23:50:49.023 appintentsnltrainingprocessor[2092:9894] Parsing options for appintentsnltrainingprocessor
+2026-10-27 23:50:49.024 appintentsnltrainingprocessor[2092:9894] Starting AppIntents SSU YAML Generation
+2026-10-27 23:50:49.048 appintentsnltrainingprocessor[2092:9894] No AppShortcuts found - Skipping.
+
+RegisterExecutionPolicyException /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    builtin-RegisterExecutionPolicyException /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app
+
+Validate /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    builtin-validationUtility /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app -shallow-bundle -infoplist-subpath Info.plist
+
+Touch /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app (in target 'WakeUp' from project 'WakeUp')
+    cd /Users/runner/work/wakeup/wakeup
+    /usr/bin/touch -c /Users/runner/work/wakeup/wakeup/build/Build/Products/Release-iphoneos/WakeUp.app
+
+** BUILD SUCCEEDED **
+
