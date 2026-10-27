@@ -1,0 +1,7 @@
+build/
+Payload/
+*.ipa
+WakeUp.xcodeproj/
+Generated/
+build.log
+.DS_Store
