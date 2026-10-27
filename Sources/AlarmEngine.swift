@@ -1,5 +1,6 @@
 import ActivityKit
 import AlarmKit
+import AppIntents
 import Foundation
 import SwiftUI
 import UIKit
@@ -36,6 +37,8 @@ final class AlarmEngine: ObservableObject {
     @Published private(set) var authorized = false
 
     private var history: [String]
+    /// Wake-up sounds only, so the first sound you hear doesn't repeat for ~2 weeks.
+    private var mainHistory: [String]
     private var refreshing = false
     private var refreshAgain = false
 
@@ -43,6 +46,7 @@ final class AlarmEngine: ObservableObject {
     private let settingsKey = "settings.v1"
     private let sessionsKey = "sessions.v1"
     private let historyKey = "soundHistory.v1"
+    private let mainHistoryKey = "mainSoundHistory.v1"
 
     private init() {
         let dec = JSONDecoder()
@@ -57,6 +61,7 @@ final class AlarmEngine: ObservableObject {
             sessions = []
         }
         history = defaults.stringArray(forKey: historyKey) ?? []
+        mainHistory = defaults.stringArray(forKey: mainHistoryKey) ?? []
     }
 
     private func save() {
@@ -64,6 +69,7 @@ final class AlarmEngine: ObservableObject {
         if let d = try? enc.encode(settings) { defaults.set(d, forKey: settingsKey) }
         if let d = try? enc.encode(sessions) { defaults.set(d, forKey: sessionsKey) }
         defaults.set(history, forKey: historyKey)
+        defaults.set(mainHistory, forKey: mainHistoryKey)
     }
 
     // MARK: - What's happening now
@@ -158,7 +164,21 @@ final class AlarmEngine: ObservableObject {
 
     // MARK: - Sound rotation
 
-    /// Picks a sound you haven't heard recently, so your brain never gets used to one.
+    /// The wake-up sound: never one of the last ~14 mornings' sounds, so your brain never gets used to one.
+    private func nextMainSound() -> String {
+        let pool = SoundLibrary.pool(includeImported: settings.useImportedSounds)
+        guard !pool.isEmpty else { return "default" }
+        let recentCount = max(0, min(pool.count - 2, 14))
+        let recent = Set(mainHistory.suffix(recentCount))
+        let candidates = pool.filter { !recent.contains($0) }
+        let pick = (candidates.isEmpty ? pool : candidates).randomElement()!
+        mainHistory.append(pick)
+        if mainHistory.count > 60 { mainHistory.removeFirst(mainHistory.count - 60) }
+        history.append(pick)
+        if history.count > 60 { history.removeFirst(history.count - 60) }
+        return pick
+    }
+
     private func nextSound(excluding: Set<String>) -> String {
         let pool = SoundLibrary.pool(includeImported: settings.useImportedSounds)
         guard !pool.isEmpty else { return "default" }
@@ -174,7 +194,7 @@ final class AlarmEngine: ObservableObject {
     }
 
     private func assignSounds(_ s: inout WakeSession) {
-        let main = nextSound(excluding: [])
+        let main = nextMainSound()
         let chase = nextSound(excluding: [main])
         let blast = nextSound(excluding: [main, chase])
         s.mainSound = main
@@ -331,20 +351,20 @@ final class AlarmEngine: ObservableObject {
     }
 
     private func kill(_ id: UUID) async {
-        try? await AlarmManager.shared.stop(id: id)
-        try? await AlarmManager.shared.cancel(id: id)
+        try? AlarmManager.shared.stop(id: id)
+        try? AlarmManager.shared.cancel(id: id)
     }
 
     /// Makes the system's alarm list match the plan.
     private func syncWithSystem(now: Date) async {
         guard authorized else { return }
-        let system: [Alarm] = (try? await AlarmManager.shared.alarms) ?? []
+        let system: [Alarm] = (try? AlarmManager.shared.alarms) ?? []
         let systemIDs = Set(system.map(\.id))
         let known = Set(sessions.flatMap { $0.alarms.map(\.id) })
 
         // Cancel anything we no longer want (but never something ringing right now).
         for alarm in system where !known.contains(alarm.id) && alarm.state != .alerting {
-            try? await AlarmManager.shared.cancel(id: alarm.id)
+            try? AlarmManager.shared.cancel(id: alarm.id)
         }
 
         // Schedule what's missing. Main alarms first, nearest mornings first,
@@ -441,7 +461,7 @@ final class AlarmEngine: ObservableObject {
         guard let s = sessions.first(where: { $0.id == sessionID }) else { return }
         let now = Date()
         for a in s.alarms where a.fireDate <= now.addingTimeInterval(1) {
-            try? await AlarmManager.shared.stop(id: a.id)
+            try? AlarmManager.shared.stop(id: a.id)
         }
     }
 
