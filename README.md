@@ -12,7 +12,7 @@ Personal alarm app for a deep sleeper. The only way to stop the morning alarm is
 
 ## Getting the app onto your phone
 
-1. Open the latest run under the **Actions** tab of this repo, download **WakeUp-ipa**, unzip it.
+1. Download the latest build: https://github.com/TheJamesGithub/wakeup/releases/latest/download/WakeUp.ipa
 2. Drag `WakeUp.ipa` into Sideloadly, sign in with your Apple ID, Start.
 3. On the phone: Settings > Privacy & Security > Developer Mode (on, if asked), and Settings > General > VPN & Device Management > trust your Apple ID.
 4. Open WakeUp, allow Alarms + Camera + Notifications, add a barcode item, set your times.
